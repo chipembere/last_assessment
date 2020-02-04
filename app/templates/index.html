@@ -5,7 +5,6 @@
 <link rel= "stylesheet" type= "text/css" href= "static/styles/application.css">
 </head>
 <body>
-{% comment %} although the app works - the order of activity and people output does not match the template as described below! {% endcomment %}
 <h1>{{people}} <span>for</span> {{activity}}</h1>
 <form action="{{ url_for('idea') }}", method='get'>
 <input type = "submit" value = "Get Startup Idea"/>
