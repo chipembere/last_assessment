@@ -7,4 +7,5 @@
 7. Add -1 to generator so the list does not go out of range
 8. Fix CSS route
 9. Test random generator by executing test file python test.py with the directory with the test file
+<!-- Is it as simple as using flask run without the export? -->
 To run, flask run in root directory then go on your browser to the http://localhost:5000

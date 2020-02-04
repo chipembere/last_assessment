@@ -8,6 +8,7 @@ def index():
 
 @app.route('/getIdea', methods=['get'])
 def idea():
+    # this doesn't match the signature of the actual method (activities, people)
     people, activity = generator.get_random_idea()
 
     return render_template('index.html', title='Home', activity=activity, people = people)
