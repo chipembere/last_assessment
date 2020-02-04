@@ -8,6 +8,6 @@ def index():
 
 @app.route('/getIdea', methods=['get'])
 def idea():
-    people, activity = generator.getRandomIdea()
+    people, activity = generator.get_random_idea()
 
     return render_template('index.html', title='Home', activity=activity, people = people)
