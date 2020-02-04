@@ -6,9 +6,8 @@ from app import generator
 def index():
     return render_template('index.html', activity='activity', people = 'people')
 
-@app.route('/getIdea', methods=['POST'])
+@app.route('/getIdea', methods=['get'])
 def idea():
-
     people, activity = generator.getRandomIdea()
 
     return render_template('index.html', title='Home', activity=activity, people = people)

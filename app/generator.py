@@ -7,4 +7,4 @@ def getRandomIdea():
     i = random.randint(0, len(activities))
     j = random.randint(0, len(people))
 
-    return capitalize(activities[i]), capitalize(people[j])
+    return activities[i].capitalize(), people[j].capitalize()
