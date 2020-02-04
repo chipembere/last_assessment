@@ -4,8 +4,7 @@ from app import generator
 
 @app.route('/')
 def index():
-
-    render_template('index.html', activity='activity', people = 'people')
+    return render_template('index.html', activity='activity', people = 'people')
 
 @app.route('/getIdea', methods=['POST'])
 def idea():
