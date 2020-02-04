@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>{{ title }}</title>
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link rel= "stylesheet" type= "text/css" href= "application.css">
+</head>
+<body>
+<h1>{{people}} <span>for</span> {{activity}}</h1>
+<form action="{{ url_for('getIdea') }}", method='get'>
+<input type = "submit" value = "Get Startup Idea"/>
+<form>
+</html>
