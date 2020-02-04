@@ -8,3 +8,4 @@ def get_random_idea():
     j = random.randint(0, len(people)-1)
 
     return activities[i].capitalize(), people[j].capitalize()
+
